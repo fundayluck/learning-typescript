@@ -10,5 +10,8 @@ describe('Data Type', () => {
         // name = 100
         // balance = "100000"
         // isVip = 1
+
+        // warning!!
+        // always test your code using npx tsc command!
     })
 })
