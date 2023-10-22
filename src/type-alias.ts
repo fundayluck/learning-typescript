@@ -12,3 +12,15 @@ export type Product = {
     category: Category;
     description?: string;
 }
+
+export enum CustomerType {
+    REGULAR = 'REGULAR',
+    GOLD = 'GOLD',
+    PLATINUM = 'PLATINUM'
+}
+
+export type Customer = {
+    id: number;
+    name: string;
+    type: CustomerType;
+}
