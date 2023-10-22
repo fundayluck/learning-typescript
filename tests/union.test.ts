@@ -19,6 +19,9 @@ describe('union', function () {
                 return !value
             }
         }
+        expect(process('Afan')).toBe("AFAN")
+        expect(process(50)).toBe(52)
+        expect(process(true)).toBe(false)
     })
 })
 
