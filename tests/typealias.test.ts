@@ -3,8 +3,13 @@ import { Category, Product } from "../src/type-alias"
 describe('type alias', function () {
     it('should support typscript', function () {
 
-        const category: Category = {
+        const person: { id: string, name: string, hobies?: string[] } = {
             id: '1',
+            name: 'afan'
+        }
+
+        const category: Category = {
+            id: 1,
             name: 'handphone'
         }
 
@@ -15,6 +20,7 @@ describe('type alias', function () {
             category: category
         }
 
+        console.info(person)
         console.info(category)
         console.info(product)
 
