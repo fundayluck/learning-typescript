@@ -24,5 +24,6 @@ describe('Array', () => {
         console.info(person)
 
         // person[0] = "Afan"
+
     })
 })
