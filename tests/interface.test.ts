@@ -1,4 +1,5 @@
 import { Employee, Manager } from "../src/employee"
+import { Person } from "../src/person"
 import { Seller } from "../src/seller"
 
 describe('interface', function () {
@@ -73,12 +74,6 @@ describe('interface', function () {
         console.info(manager)
     })
     it('should support function in interface', function () {
-
-        interface Person {
-            name: string
-            sayHello(name: string): string
-        }
-
         const person: Person = {
             name: 'Afan',
             sayHello: function (name: string): string {
@@ -109,4 +104,13 @@ describe('interface', function () {
         console.info(domain)
     })
 
+    it('should support intersection types', function () {
+        const person: any = {
+            name: "Afan",
+            age: 30
+        }
+
+        const person2: Person = person as Person
+        console.info(person2)
+    })
 })
