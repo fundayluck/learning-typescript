@@ -3,7 +3,7 @@ import { Category, Product } from "../src/type-alias"
 describe('type alias', function () {
     it('should support typscript', function () {
 
-        const person: { id: string, name: string, hobies?: string[] } = {
+        const person: { id: string, name: string, hobbies?: string[] } = {
             id: '1',
             name: 'afan'
         }
